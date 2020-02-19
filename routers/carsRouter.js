@@ -30,8 +30,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
-// HOW TO DO A GET CAR ID -- BY SALE ID
-//validation for your not nullable code to check if you have it/if it's repeated
+
 router.post("/", (req, res) => {
   db.insert(req.body)
     .into("cars")
